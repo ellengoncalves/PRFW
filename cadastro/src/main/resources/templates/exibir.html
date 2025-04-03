@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exibição</title>
+</head>
+<body>
+	<p>
+		Cliente: <span th:text="${cliente.name}"></span>
+		<span th:if="not ${cliente.ativo}">inativo</span><br>
+		E-mail:  <span th:text="${cliente.email}"></span><br>
+	</p>
+</body>
+</html>
